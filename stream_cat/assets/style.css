@@ -1,0 +1,169 @@
+/*
+===============================================================================
+Copyright (c) 2024 Stream.Cat
+Website: https://stream.cat
+===============================================================================
+*/
+
+window {
+    background: #fff;
+    border-radius: 4px;
+}
+
+headerbar {
+    padding: 0;
+    background: #fff;
+}
+
+headerbar > windowhandle > box {
+    padding-left: 0;
+}
+
+.headerbar-logo {
+    border-right: 1px solid #ddd;
+    padding: 0 5px;
+}
+
+.red-border {
+    border: 1px solid red;
+    background: #dddddd;
+}
+.test {
+    background: red;
+    padding: 0;
+}
+
+.test2 {
+    background: #e71ccb;
+    padding: 0;
+}
+
+.green {
+    background: #ddd;
+    border-radius: 20px;
+}
+
+.green:hover {
+    background: #d0d0d0;
+}
+
+.coming-soon-h {
+    padding: 40px 4px 5px 4px;
+    font-weight: bold;
+}
+
+.coming-soon {
+    padding: 5px 4px 20px 4px;
+}
+
+.menu {
+    border: 0;
+    border-radius: 0;
+    padding: 5px;
+    border-right: 1px solid #ddd;
+}
+
+.menu-btn {
+    padding: 0;
+    /*line-height: 0;*/
+    background: none;
+}
+
+.menu-btn:hover {
+    background: #f5f5f5;
+}
+
+.menu-btn.active {
+    background: #e0e5e8;
+}
+
+.menu-btn-icon {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.link {
+    background: none;
+    outline: none;
+    padding: 0;
+}
+
+.donate-link {
+    background: #ecb715;
+    color: #fff;
+    outline: none;
+}
+
+.donate-link:hover {
+    background: #daaa17;
+    color: #fff;
+}
+
+.sidebar {
+    border: 0;
+    border-radius: 0;
+    border-left: 1px solid #ddd;
+}
+
+.sidebar-about {
+    padding: 10px;
+}
+
+.sidebar-ptz {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.sidebar-ptz-btn {
+
+}
+
+.sidebar-cameras {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.camera-view-overlay {
+}
+
+.camera-view {
+    padding: 0;
+    background: #f3f3f3;
+}
+
+.camera-view-img {
+    padding: 0;
+}
+
+.camera-view-name {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 0 4px 0 0;
+    font-size: 12px;
+    padding: 2px 4px;
+}
+
+.sidebar-camera-btn {
+    padding: 0;
+    /*line-height: 0;*/
+    background: #eee;
+}
+
+.sidebar-camera-btn:hover {
+    background: #f5f5f5;
+}
+
+.sidebar-camera-btn.active {
+    background: #e0e5e8;
+}
+
+.sidebar-camera-btn-icon {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.camera-add-form {
+    padding: 10px;
+}
