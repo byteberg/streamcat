@@ -4,7 +4,6 @@ Copyright (c) 2024 Stream.Cat
 Website: https://stream.cat
 ===============================================================================
 """
-
 import gi
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
@@ -75,13 +74,15 @@ class StreamCatApp(Gtk.ApplicationWindow):
         self.sidebar_cameras = Gtk.Box()
         self.cameras_notebook = Gtk.Notebook()
 
+        # Pinned Window
+        self.pinned_win = controllers.PinnedWin(self)
+
         # UI
         self.init_ui()
 
         # Load cameras
         camera_controller = controllers.CameraController(self)
         camera_controller.load_cameras()
-
 
 
 class StreamCatAdw(Adw.Application):

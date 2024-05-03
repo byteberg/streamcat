@@ -167,3 +167,19 @@ headerbar > windowhandle > box {
 .camera-add-form {
     padding: 10px;
 }
+
+.pinned-win-header-bar {
+    box-shadow: none;
+    min-height: 0;
+    padding: 4px 4px 0 4px;
+}
+
+.pinned-win-header-bar * {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.pinned-win-header-bar-label {
+    padding: 0;
+}

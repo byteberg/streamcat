@@ -55,6 +55,12 @@ def add_sidebar_camera(app, camera):
     item_box.append(edit_btn)
 
     c = controllers.CameraController(app)
+
+    pin_btn = create_btn("pin.svg", "sidebar-camera-btn-icon", "sidebar-camera-btn")
+    pin_btn.set_margin_start(3)
+    pin_btn.connect('clicked', c.pin_camera, camera)
+    item_box.append(pin_btn)
+
     delete_btn = create_btn("trash.svg", "sidebar-camera-btn-icon", "sidebar-camera-btn")
     delete_btn.set_margin_start(3)
     delete_btn.connect('clicked', c.remove_camera, camera)

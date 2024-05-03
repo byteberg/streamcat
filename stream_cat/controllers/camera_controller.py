@@ -151,6 +151,40 @@ class CameraController:
 
         self.load_cameras()
 
+    def pin_camera(self, btn, the_cam):
+        self.app.pinned_win.show()
+
+        camera_box, picture = ui.camera_view(the_cam)
+        self.app.pinned_win.win.set_child(camera_box)
+
+        # cameras_grids[current_page - 1].attach(camera_box, j, i, 1, 1)
+
+        # Camera streaming
+        utils.RTSPPlayer(the_cam, picture)
+
+        # def delete_confirm(dialog2, response_id):
+        #     dialog2.destroy()
+        #     if response_id == Gtk.ResponseType.YES:
+        #         data = self.get_data()
+        #         for i, dataItem in enumerate(data):
+        #             if dataItem["uid"] == the_cam.uid:
+        #                 data.pop(i)
+        #         self.save_data(data)
+        #         self.load_cameras()
+        #
+        # dialog = Gtk.MessageDialog(
+        #     transient_for=self.app.camera_form_win,
+        #     # flags=0,
+        #     message_type=Gtk.MessageType.QUESTION,
+        #     buttons=Gtk.ButtonsType.YES_NO,
+        #     text="Really delete this camera?",
+        # )
+        #
+        # dialog.set_transient_for(self.app)
+        # dialog.set_modal(self.app)
+        # dialog.connect("response", delete_confirm)
+        # dialog.show()
+
     def remove_camera(self, btn, the_cam):
         def delete_confirm(dialog2, response_id):
             dialog2.destroy()

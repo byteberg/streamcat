@@ -6,3 +6,4 @@ Website: https://stream.cat
 """
 
 from .camera_controller import CameraController
+from .pinned_win import PinnedWin
